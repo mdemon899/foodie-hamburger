@@ -10,6 +10,10 @@ hamburgerMenu.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 
+navBar.parentElement.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
 closeIcon.addEventListener("click", () => {
   navBar.classList.remove("menu-open");
   hamburgerMenu.classList.remove("hidden");
